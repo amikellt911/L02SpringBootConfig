@@ -23,9 +23,9 @@ public class ZuccConfig {
     @Bean
     public OurSchool ourSchool(){
         if(year < 2020){
-            return new OurSchool("浙江大学城市学院");
+            return new OurSchool("浙江大学城市学院"+year);
         } else {
-            return new OurSchool("浙大城市学院");
+            return new OurSchool("浙大城市学院"+year);
         }
     }
 
